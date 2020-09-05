@@ -4,6 +4,13 @@ import string
 working = True
 while working == True:
 
+    """
+    length = The lenth of the desired password
+    wantNums = This decides if you want to include any numbers in the password
+    wantUppers = This decides if you want it to have upper case letters
+    wantSymbols = This decides if you want any special characters 
+    """
+
 
     length = int(input("How long do you want the password to be? [in numbers]"))
     wantNums = input("Do you want numbers in the password? [y/n] ")
