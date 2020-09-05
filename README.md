@@ -1,4 +1,4 @@
-# Lambdata-faren
+# Password Generator
 
 A first attempt at creating a password generator. 
 
