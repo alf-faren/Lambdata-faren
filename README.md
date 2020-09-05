@@ -1,3 +1,9 @@
 # Lambdata-faren
 
-A first attempt at creating a password generator. This is currently able to creating a password with lower case, upper case, and numbers. Special characters are only to be included with 2 of the options previously mentioned. Currently attempting to fix this problem.
+A first attempt at creating a password generator. 
+
+You are able to choose the length of the password.
+
+It is mandatory to have letters in it.
+
+Options to include in the password : upper case letters, numbers, and/or special characters. 
