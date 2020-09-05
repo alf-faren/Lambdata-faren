@@ -14,9 +14,10 @@ while working == True:
 
     def passwordGen(length):
 
-        if wantNums.lower() == "y" and wantUppers.lower() == "y":
+        if wantNums.lower() == "y" and wantUppers.lower() == "y" and wantSymbols.lower() == "n":
             password = ""
             chars = string.ascii_letters + "1234567890"
+            symb = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~'"
             for i in range(length):
                 password = password + random.choice(chars)
             print(password)
@@ -36,7 +37,7 @@ while working == True:
             symb = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~'"
             for i in range(length):
                 password = password + random.choice(chars) + random.choice(symb)
-            print(password.lower())
+            print(password)
 
         elif wantNums.lower() == "n" and wantUppers.lower() == "n" and wantSymbols.lower() == "y":
             password = ""
@@ -44,18 +45,16 @@ while working == True:
             symb = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~'"
             for i in range(length):
                 password = password + random.choice(chars) + random.choice(symb)
-            print(password.lower())
+            print(password)
 
-            
-# The block of code below is currently unfunctional. Currently trying to figure out why it doesn't include the special characters when you select all 3 options.
 
-#         elif wantNums.lower() == "y" and wantUppers.lower() == "y" and wantSymbols.lower() == "y":
-#             password = ""
-#             chars = string.ascii_letters + "1234567890"
-#             symb = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~'"
-#             for i in range(length):
-#                 password = password + random.choice(chars) + random.choice(symb)
-#             print(password.lower())
+        elif wantNums.lower() == "y" and wantUppers.lower() == "y" and wantSymbols.lower() == "y":
+            password = ""
+            chars = string.ascii_letters + "1234567890"
+            symb = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~'"
+            for i in range(length):
+                password = password + random.choice(chars) + random.choice(symb)
+            print(password)
 
         else:
             print("Invalid input, please enter [y/n]! ")
