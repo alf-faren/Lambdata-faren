@@ -5,10 +5,14 @@ working = True
 while working == True:
 
     """
-    length = The lenth of the desired password
-    wantNums = This decides if you want to include any numbers in the password
-    wantUppers = This decides if you want it to have upper case letters
-    wantSymbols = This decides if you want any special characters 
+    This function is designated to help you create a randomized password with the length of your choosing.
+    Args:
+        length (int) = The lenth of the desired password
+        wantNums (Requires a string value of 'y' or 'n') = This decides if you want to include any numbers in the password
+        wantUppers (Requires a string value of 'y' or 'n') = This decides if you want it to have upper case letters
+        wantSymbols (Requires a string value of 'y' or 'n') = This decides if you want any special characters 
+    Returns:
+        A password of your choosing depending on the options you have chosen
     """
 
 
