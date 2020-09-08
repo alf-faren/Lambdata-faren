@@ -10,7 +10,7 @@ Options to include in the password : upper case letters, numbers, and/or special
 
 # Installation
 
-``py
+```py
 pip install -i https://test.pypi.org/simple/ Password-Generator
-
+```
 # Usage
